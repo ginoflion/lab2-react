@@ -3,6 +3,7 @@ import './App.css';
 import SpellBook from './SpellBook';
 import Map from './Map';
 import Inventory from './Inventory';
+import MissionLog from './MissionLog';
 
 class App extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class App extends React.Component {
         <SpellBook />
         <Map />
         <Inventory />
+        <MissionLog />
       </div>
       
     );
