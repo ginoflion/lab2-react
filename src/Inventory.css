@@ -1,0 +1,23 @@
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .containerInventory {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    display: flex;
+  }
+  
+  .inventory-box {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    margin-left: 30px;
+    display: flex;
+   
+  }
