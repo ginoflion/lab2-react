@@ -1,5 +1,6 @@
 import React from "react";
 import './MissionLog.css';
+import Map from './Map';  // Importe o componente Map
 
 class MissionLog extends React.Component {
   constructor(props) {
@@ -12,21 +13,6 @@ class MissionLog extends React.Component {
     };
   }
 
-  componentDidMount() {
-    this.verificarBackground();
-  }
-
-  verificarBackground = () => {
-    const { missões, background } = this.state;
-    if (background === "url('volcano.jpg')") {
-      const missaoIndex = missões.findIndex(missao => missao.objetivo === 'Visitar o vulcão');
-
-      if (missaoIndex !== -1) {
-        this.concluirMissao(missaoIndex);
-      }
-    }
-  };
-
   concluirMissao = (index) => {
     this.setState(prevState => {
       const missões = [...prevState.missões];
@@ -34,6 +20,24 @@ class MissionLog extends React.Component {
       missões[index].exibirMissao = false; 
       return { missões };
     });
+  };
+
+  handleMapClick = (mapIndex) => {
+    const missaoIndex = this.state.missões.findIndex(missao => missao.objetivo === 'Visitar o vulcão');
+    if (missaoIndex !== -1) {
+      this.concluirMissao(missaoIndex);
+    }
+  };
+
+  handleBackgroundButtonClick = () => {
+    // Adicione a lógica para transformar background.jpg em volcano.jpg
+    document.body.style.backgroundImage = "url('volcano.jpg')";
+
+    // Verifique se a missão 'Visitar o vulcão' está presente e marque como concluída
+    const missaoIndex = this.state.missões.findIndex(missao => missao.objetivo === 'Visitar o vulcão');
+    if (missaoIndex !== -1) {
+      this.concluirMissao(missaoIndex);
+    }
   };
 
   render() {
@@ -50,8 +54,11 @@ class MissionLog extends React.Component {
               </li>
             )
           ))}
+        
         </ul>
+        <Map onMapClick={this.handleMapClick} />
       </div>
+      
     );
   }
 }
