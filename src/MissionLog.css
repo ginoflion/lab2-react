@@ -1,39 +1,38 @@
 .RegistroMissao {
-    display: flex;
-    flex-direction: column;
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: auto; 
-  }
-  
-  .RegistroMissao h2 {
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .RegistroMissao ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .RegistroMissao li {
-    margin-bottom: 8px;
-  }
-  
-  .ObjetivoMissao {
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .RegistroMissao .concluida {
-    display: none;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  background-image: url('manuscript.jpg'); 
+  padding: 15px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: auto; 
+}
+
+
+.RegistroMissao h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.RegistroMissao ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.RegistroMissao li {
+  margin-bottom: 8px;
+}
+
+.ObjetivoMissao {
+  font-size: 16px;
+  color: #555;
+}
+
+.RegistroMissao .concluida {
+  display: none;
+}

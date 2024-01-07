@@ -6,7 +6,7 @@ class SpellBook extends React.Component {
   constructor(props) {
     super(props);
 
-    this.allSpells = ['Invisibilidade', 'Cura', 'Salto', 'Inteligência', 'Velocidade', 'Visão'];
+    this.allSpells = ['Sneak', 'Cura', 'Salto', 'Inteligência', 'Velocidade', 'Visão'];
 
     const selectedSpells = this.selectRandomSpells();
 
@@ -37,6 +37,7 @@ class SpellBook extends React.Component {
     return (
       <div>
         <ul>
+          
           {this.state.spells.map((spell, index) => (
             <li key={index}>
               <button onClick={() => this.handleSpellClick(spell)}>

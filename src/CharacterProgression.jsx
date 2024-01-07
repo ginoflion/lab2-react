@@ -1,11 +1,9 @@
-// CharacterProgression.jsx
 import React, { useState } from "react";
 import './CharacterProgression.css';
-import SpellBook from "./SpellBook"; // Certifique-se de ajustar o caminho conforme necessário
-
+import SpellBook from "./SpellBook";
 const CharacterProgression = () => {
   const [stats, setStats] = useState({
-    Invisibilidade: 10,
+    Sneak: 10,
     Cura: 10,
     Salto: 10,
     Inteligência: 10,
@@ -14,7 +12,6 @@ const CharacterProgression = () => {
   });
 
   const aumentarStatsPorFeitico = (feitiço) => {
-    // Atualiza os stats conforme o feitiço escolhido
     setStats(prevStats => ({
       ...prevStats,
       [feitiço]: prevStats[feitiço] + 5,

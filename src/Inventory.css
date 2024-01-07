@@ -15,15 +15,39 @@
   .inventory-box {
     width: 100px;
     height: 100px;
-    background-color: #ffffff;
-    border: 1px solid #000000;
+    background-color: black;
+    border: 5px solid #ffffff;
     margin-left: 30px;
     display: flex;
    
   }
 
-  .Quadrado{
-    width: 75px;
-    height: 75px;
-    background-color: #b528f7; 
+  .removeButton {
+    position: fixed;
+    right: 0;
+    background-color: #ff0000; /* Cor de fundo para destacar, ajuste conforme necessário */
+    color: #ffffff; /* Cor do texto, ajuste conforme necessário */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .buttonContainer {
+    position: fixed;
+    bottom: 20%;
+    right: 0;
+    transform: translate(0, -50%);
+    text-align: center; /* Para centralizar os botões verticalmente no centro da tela */
+  }
+
+  .buttonContainer button {
+    margin-right: 10px;
+  }
+  
+  .addSquareButton {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px; 
   }

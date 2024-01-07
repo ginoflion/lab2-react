@@ -1,5 +1,6 @@
+
 import React from 'react';
-import './Item.css';
+
 
 const Item = ({ isVisible, onAddToInventory }) => {
   const handleClick = () => {
@@ -8,9 +9,22 @@ const Item = ({ isVisible, onAddToInventory }) => {
     }
   };
 
+  const itemStyle = {
+    width: '100%', 
+    height: '100%', 
+    display: isVisible ? 'flex' : 'none',
+    justifyContent: 'center',  
+    alignItems: 'center',     
+  };
+
   return (
-    <div className={`quadrado ${isVisible ? 'visible' : 'hidden'}`} onClick={handleClick}>
-    </div>
+    <img
+      className="item"
+      src={isVisible ? 'apple.png' : ''}
+      alt="Item"
+      style={itemStyle}
+      onClick={handleClick}
+    />
   );
 };
 

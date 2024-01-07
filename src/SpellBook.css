@@ -3,7 +3,7 @@ ul {
     display: flex; 
     padding: 0;
     justify-content: center;
-    align-items: flex-end;
+    top: 0;
   }
   
   li {
@@ -12,7 +12,7 @@ ul {
   
 
   button {
-    background-color: #4caf50; 
+    background-color: #a34caf; 
     color: white; 
     padding: 10px 20px; 
     font-size: 16px;
@@ -23,5 +23,5 @@ ul {
   
   
   button:hover {
-    background-color: #45a049; 
+    background-color: #c424ec; 
   }

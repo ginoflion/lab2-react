@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Character.css';
 
 const Character = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState({ x: window.innerWidth / 2 - 24, y: window.innerHeight / 2 - 24 });
   const [isWalking, setIsWalking] = useState(false);
 
   useEffect(() => {
@@ -63,7 +63,7 @@ const Character = () => {
   }, []);
 
   return (
-    <div className="character" style={{ position: 'relative', left: position.x, top: position.y }}>
+    <div className="character" style={{ position: 'absolute', left: position.x, top: position.y }}>
       <div className={isWalking ? 'running-animation' : 'idle-animation'}></div>
     </div>
   );

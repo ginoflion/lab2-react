@@ -19,7 +19,7 @@ class Map extends React.Component {
       document.body.style.backgroundImage = "url('volcano.jpg')";
       this.props.onMapClick(0);
     } else if(mapIndex===1){
-      document.body.style.backgroundImage = "url('forest.png')";
+      document.body.style.backgroundImage = "url('forest.jpg')";
     } else if(mapIndex===2){
       document.body.style.backgroundImage = "url('desert.jpg')";
     }
@@ -32,7 +32,7 @@ class Map extends React.Component {
     return (
       <div className="containerMap">
         <div className={`mapa ${selectedMap === 0 ? "selected" : ""}`} onClick={() => this.handleMapClick(0)}>
-        <img src={'./fireIcon.jpg'} alt="Fire" />
+        <img src={'./fireIcon.png'} alt="Fire" />
         </div>
         <div className={`mapa ${selectedMap === 1 ? "selected" : ""}`} onClick={() => this.handleMapClick(1)}>
         <img src={'./forestIcon.png'} alt="forestIcon" />

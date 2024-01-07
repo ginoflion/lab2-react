@@ -10,14 +10,14 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Livro de Feitiços</h1>
-    
-        <Map />
-        <Inventory />
-        <MissionLog />
+        
         <Character/>
         <CharacterProgression/>
+        <Map />
         
+        <MissionLog />
+      
+        <Inventory />
       </div>
       
     );

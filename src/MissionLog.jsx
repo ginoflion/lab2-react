@@ -1,6 +1,6 @@
 import React from "react";
 import './MissionLog.css';
-import Map from './Map';  // Importe o componente Map
+import Map from './Map';  
 
 class MissionLog extends React.Component {
   constructor(props) {
@@ -29,17 +29,7 @@ class MissionLog extends React.Component {
     }
   };
 
-  handleBackgroundButtonClick = () => {
-    // Adicione a lógica para transformar background.jpg em volcano.jpg
-    document.body.style.backgroundImage = "url('volcano.jpg')";
-
-    // Verifique se a missão 'Visitar o vulcão' está presente e marque como concluída
-    const missaoIndex = this.state.missões.findIndex(missao => missao.objetivo === 'Visitar o vulcão');
-    if (missaoIndex !== -1) {
-      this.concluirMissao(missaoIndex);
-    }
-  };
-
+ 
   render() {
     const { missões, background } = this.state;
 

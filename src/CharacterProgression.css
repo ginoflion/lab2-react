@@ -4,19 +4,20 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #020202;
+    background-image: url('manuscript.jpg'); 
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
   }
   
   .statsLabel {
+    color: #333;
     font-weight: bold;
     margin-bottom: 5px;
   }
   
   .statsItem {
     margin-bottom: 5px;
+    color: #555;
   }
   
   

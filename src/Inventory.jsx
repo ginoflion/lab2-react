@@ -52,7 +52,7 @@ class Inventory extends React.Component {
             <button key={index} onClick={() => this.removerItemDoSlot(index)}>Remover do Slot {index + 1}</button>
           ))}
         </div>
-        <button onClick={this.adicionarQuadradoAoInventario}>Adicionar Quadrado</button>
+        <button className="addSquareButton" onClick={this.adicionarQuadradoAoInventario}>Adicionar Quadrado</button>
       </div>
     );
   }
