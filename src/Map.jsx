@@ -19,7 +19,7 @@ class Map extends React.Component {
       document.body.style.backgroundImage = "url('volcano.jpg')";
       this.props.onMapClick(0);
     } else if(mapIndex===1){
-      document.body.style.backgroundImage = "url('forest.jpg')";
+      document.body.style.backgroundImage = "url('forest.png')";
     } else if(mapIndex===2){
       document.body.style.backgroundImage = "url('desert.jpg')";
     }

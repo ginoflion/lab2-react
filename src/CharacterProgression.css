@@ -1,0 +1,22 @@
+
+
+.characterProgressionContainer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #020202;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .statsLabel {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .statsItem {
+    margin-bottom: 5px;
+  }
+  
+  
