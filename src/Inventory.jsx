@@ -49,10 +49,10 @@ class Inventory extends React.Component {
         </div>
         <div className="buttonContainer">
           {this.state.itens.map((item, index) => (
-            <button key={index} onClick={() => this.removerItemDoSlot(index)}>Remover do Slot {index + 1}</button>
+            <button key={index} onClick={() => this.removerItemDoSlot(index)}>Remover </button>
           ))}
         </div>
-        <button className="addSquareButton" onClick={this.adicionarQuadradoAoInventario}>Adicionar Quadrado</button>
+        <button className="addSquareButton" onClick={this.adicionarQuadradoAoInventario}>Adicionar Maça</button>
       </div>
     );
   }

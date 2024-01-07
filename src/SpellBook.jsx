@@ -29,7 +29,6 @@ class SpellBook extends React.Component {
   }
 
   handleSpellClick(spell) {
-    // Chamando a função fornecida via props para atualizar os stats no CharacterProgression
     this.props.onSpellCast(spell);
   }
 

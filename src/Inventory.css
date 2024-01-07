@@ -25,11 +25,12 @@
   .removeButton {
     position: fixed;
     right: 0;
-    background-color: #ff0000; /* Cor de fundo para destacar, ajuste conforme necessário */
-    color: #ffffff; /* Cor do texto, ajuste conforme necessário */
+    background-color: #ff0000; 
+    color: #ffffff;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+    margin: 30px;
   }
 
   .buttonContainer {
@@ -37,11 +38,12 @@
     bottom: 20%;
     right: 0;
     transform: translate(0, -50%);
-    text-align: center; /* Para centralizar os botões verticalmente no centro da tela */
+    text-align: center; 
   }
 
   .buttonContainer button {
-    margin-right: 10px;
+    margin-right: 15px;
+    margin-left: 30px;
   }
   
   .addSquareButton {
