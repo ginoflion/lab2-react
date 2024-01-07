@@ -2,8 +2,10 @@ import React from 'react';
 import './App.css'; 
 import SpellBook from './SpellBook';
 import Map from './Map';
-import Inventory from './Inventory';
 import MissionLog from './MissionLog';
+import Inventory from './Inventory';
+import Character from './Character';
+import Item from './Item';
 
 class App extends React.Component {
   render() {
@@ -14,6 +16,9 @@ class App extends React.Component {
         <Map />
         <Inventory />
         <MissionLog />
+        <Character/>
+        <Item/>
+        
       </div>
       
     );
