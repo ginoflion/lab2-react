@@ -1,12 +1,15 @@
-
 import React from 'react';
+import './Item.css';
 
+const Item = ({ isVisible, onAddToInventory }) => {
+  const handleClick = () => {
+    if (onAddToInventory) {
+      onAddToInventory();
+    }
+  };
 
-const Item = () => {
   return (
-    <div className="seu-item">
-      <img src={'./coin_1.png'} alt="Coin" style={{ width: '100px', height: 'auto' }}/>
-   
+    <div className={`quadrado ${isVisible ? 'visible' : 'hidden'}`} onClick={handleClick}>
     </div>
   );
 };

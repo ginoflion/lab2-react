@@ -17,7 +17,7 @@ class App extends React.Component {
         <Inventory />
         <MissionLog />
         <Character/>
-        <Item/>
+  
         
       </div>
       

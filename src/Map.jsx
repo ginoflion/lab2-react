@@ -1,5 +1,6 @@
 import React from "react";
 import './Map.css';
+import Item from "./Item";
 
 
 
@@ -35,6 +36,7 @@ class Map extends React.Component {
         </div>
         <div className={`mapa ${selectedMap === 1 ? "selected" : ""}`} onClick={() => this.handleMapClick(1)}>
         <img src={'./forestIcon.png'} alt="forestIcon" />
+        {selectedMap === 1 && <Item />}
         </div>
         <div className={`mapa ${selectedMap === 2 ? "selected" : ""}`} onClick={() => this.handleMapClick(2)}>
         <img src={'./desertIcon.png'} alt="DesertIcon" />
