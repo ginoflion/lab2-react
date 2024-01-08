@@ -30,7 +30,7 @@ class Inventory extends React.Component {
   };
 
   adicionarAoInventario = () => {
-    const item = <Item isVisible={true} onAddToInventory={() => this.adicionarItemAoInventario(item)} />;
+    const item = <Item isVisible={true}  />;
     this.adicionarItemAoInventario(item);
   };
 

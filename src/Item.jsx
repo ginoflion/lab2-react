@@ -1,11 +1,9 @@
 import React from 'react';
 
 
-const Item = ({ isVisible, onAddToInventory }) => {
+const Item = ({ isVisible }) => {
   const handleClick = () => {
-    if (onAddToInventory) {
-      onAddToInventory();
-    }
+   
   };
 
   const itemStyle = {
