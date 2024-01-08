@@ -1,6 +1,5 @@
-// SpellBook.jsx
 import React from "react";
-import './SpellBook.css';
+import './Buttons.css';
 
 class SpellBook extends React.Component {
   constructor(props) {

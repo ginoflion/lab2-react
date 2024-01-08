@@ -7,7 +7,7 @@ class Inventory extends React.Component {
     super(props);
 
     this.state = {
-      itens: Array(3).fill(null) // Inicializa o inventário com 3 slots vazios
+      itens: Array(3).fill(null)
     };
   }
 
@@ -18,8 +18,6 @@ class Inventory extends React.Component {
       novoInventario[primeiroSlotVazio] = item;
 
       this.setState({ itens: novoInventario });
-
-      console.log(`${item} adicionado ao inventário no slot ${primeiroSlotVazio + 1}.`);
     } else {
       console.log("O inventário está cheio. Não é possível adicionar mais itens.");
     }
@@ -29,10 +27,9 @@ class Inventory extends React.Component {
     const novoInventario = [...this.state.itens];
     novoInventario[index] = null;
     this.setState({ itens: novoInventario });
-    console.log(`Item removido do slot ${index + 1}.`);
   };
 
-  adicionarQuadradoAoInventario = () => {
+  adicionarAoInventario = () => {
     const item = <Item isVisible={true} onAddToInventory={() => this.adicionarItemAoInventario(item)} />;
     this.adicionarItemAoInventario(item);
   };
@@ -52,7 +49,7 @@ class Inventory extends React.Component {
             <button key={index} onClick={() => this.removerItemDoSlot(index)}>Remover </button>
           ))}
         </div>
-        <button className="addSquareButton" onClick={this.adicionarQuadradoAoInventario}>Adicionar Maça</button>
+        <button className="addSquareButton" onClick={this.adicionarAoInventario}>Adicionar Maça</button>
       </div>
     );
   }

@@ -7,9 +7,8 @@ class MissionLog extends React.Component {
     super(props);
     this.state = {
       missões: [
-        { id: 1, objetivo: 'Visitar o vulcão', concluida: false, exibirMissao: true },
+        { id: 1, objetivo: 'Visitar o vulcão', concluida: false, exibirMissao: true }
       ],
-      background: document.body.style.backgroundImage
     };
   }
 
@@ -31,14 +30,14 @@ class MissionLog extends React.Component {
 
  
   render() {
-    const { missões, background } = this.state;
+    const { missões } = this.state;
 
     return (
       <div className="RegistroMissao">
         <h2>Missões</h2>
         <ul>
           {missões.map((missao) => (
-            missao.exibirMissao && !missao.concluida && background !== "url('volcano.jpg')" && (
+            missao.exibirMissao && !missao.concluida && (
               <li key={missao.id} className="ObjetivoMissao">
                 {missao.objetivo}
               </li>
